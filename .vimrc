@@ -56,7 +56,7 @@ filetype plugin indent on       " required
 
 set guioptions=TlrLR
 set t_Co=256
-set shell=zsh
+set shell=bash
 
 if &term =~ '256color'
   " Disable Background Color Erase (BCE) so that color schemes
@@ -157,29 +157,12 @@ nnoremap <leader>w :w!<cr>
 " e2e matching
 nnoremap <tab> %
 vnoremap <tab> %
-" Folding
-nnoremap <Space> za
-vnoremap <Space> za
 " Remove trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 " easy expansion
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
-" Disabling arrow keys in normal and insert mode
-nnoremap  <up> <nop>
-nnoremap  <down> <nop>
-nnoremap  <left> <nop>
-nnoremap  <right> <nop>
-inoremap  <up> <nop>
-inoremap  <down> <nop>
-inoremap  <left> <nop>
-inoremap  <right> <nop>
 " insert equals sign for faster assignments
 inoremap <c-l> <space>=<space>
-
-nnoremap j gj
-nnoremap k gk
-" nnoremap ; :
-" nnoremap : ;
 
 " faster movement
 nmap J 5j
@@ -187,10 +170,6 @@ nmap K 5k
 xmap J 5j
 xmap K 5k
 
-" Disabling escape key. It's too far away!
-inoremap  <esc> <nop>
-" `jk` is much better :)
-inoremap  jk <esc>
 " Search for non breaking spaces (ascii 160)
 nnoremap <leader>hw :/\%xa0<cr>
 
