@@ -41,7 +41,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " Let Vundle manage Vundle, required
 Plugin 'scrooloose/syntastic'
-Plugin 'mhumeSF/one-dark.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'editorconfig/editorconfig-vim'
@@ -55,18 +55,10 @@ call vundle#end()
 filetype plugin indent on       " required
 
 set guioptions=TlrLR
-set t_Co=256
-set shell=bash
+set shell=zsh
 
-if &term =~ '256color'
-  " Disable Background Color Erase (BCE) so that color schemes
-  " work properly when Vim is used inside tmux and GNU screen.
-  " See also http://snk.tuxfamily.org/log/vim-256color-bce.html
-  set t_ut=
-endif
-
-"set background=dark
-colorscheme onedark
+set background=dark
+colorscheme solarized
 syntax on
 
 set list
