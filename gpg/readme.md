@@ -31,4 +31,6 @@ pinentry-program /usr/local/bin/pinentry-mac
 ```
 
 ### Export to GitHub
+```bash
 gpg --armor --export {{key_id}} | pbcopy
+```
