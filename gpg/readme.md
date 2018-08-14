@@ -18,6 +18,16 @@ gpg --full-generate-key -i
 gpg --list-secret-keys --keyid-format LONG
 ```
 
+Should you prompt something like this:
+```bash
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot 
+ssb   4096R/42B317FD4BA89E7A 2016-03-10
+```
+`3AA5C34371567BD2` is your key id.
+
 ### Configure git
 ```bash
 git config --global user.signingkey {{key_id}}
@@ -34,3 +44,6 @@ pinentry-program /usr/local/bin/pinentry-mac
 ```bash
 gpg --armor --export {{key_id}} | pbcopy
 ```
+
+### Adding the GPG key to your GitHub account
+Follow the instructions on [the official website here](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
