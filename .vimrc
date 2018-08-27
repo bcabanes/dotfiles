@@ -41,7 +41,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " Let Vundle manage Vundle, required
 Plugin 'scrooloose/syntastic'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'editorconfig/editorconfig-vim'
@@ -50,6 +49,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'junegunn/goyo.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()
 filetype plugin indent on       " required
@@ -57,9 +57,10 @@ filetype plugin indent on       " required
 set guioptions=TlrLR
 set shell=zsh
 
-set background=dark
-colorscheme solarized
+set background=light
+colorscheme PaperColor
 syntax on
+set number
 
 set list
 set listchars-=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail
