@@ -3,5 +3,6 @@
 ## Configuration
 
 - iterm2
-- Starship: https://starship.rs/
-- vim: https://github.com/amix/vimrc
+- Oh My Zsh: https://github.com/ohmyzsh/ohmyzsh
+- Powerlevel10k: https://github.com/romkatv/powerlevel10k
+- SpaceVim: https://github.com/SpaceVim/SpaceVim
