@@ -47,3 +47,4 @@ gpg --armor --export {{key_id}} | pbcopy
 
 ### Adding the GPG key to your GitHub account
 Follow the instructions on [the official website here](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
+Go to profile GPG keys: https://github.com/settings/keys.
