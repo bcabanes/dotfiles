@@ -35,9 +35,10 @@ git config --global commit.gpgsign true
 ```
 
 ### Be able to save it in KeyChain (macOS)
-Open `~/.gnupg/gpg-agent.conf` and add:
+Run:
 ```bash
-pinentry-program /usr/local/bin/pinentry-mac
+echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf 
+killall gpg-agent
 ```
 
 ### Export to GitHub
